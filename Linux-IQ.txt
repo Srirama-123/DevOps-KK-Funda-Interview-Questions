@@ -1,1 +1,3 @@
+IQ1 ] My sever is not responding as expected, How can you debug as a DevOps Engineer?
 
+Ans: 
