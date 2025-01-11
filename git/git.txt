@@ -1,0 +1,291 @@
+Certainly! Below is a list of basic Git-related interview questions along with answers that cover the essential Git commands and concepts. These will help you gain a solid understanding of how Git works and prepare for interviews.
+
+---
+
+ 1. What is Git?
+   Answer:  
+   Git is a distributed version control system (VCS) that tracks changes to files and allows multiple developers to collaborate on a project. It enables version history, branching, and merging.
+
+---
+
+ 2. How do you initialize a new Git repository?
+   Answer:  
+   To create a new Git repository, use the `git init` command in your project directory.
+   
+   git init
+   
+
+---
+
+ 3. How do you check the status of your working directory and staging area?
+   Answer:  
+   To see the status of changes in your repository, use the `git status` command. This shows the current state of the working directory and staging area (which files are modified, untracked, or staged for commit).
+   
+   git status
+   
+
+---
+
+ 4. How do you add a file to the staging area?
+   Answer:  
+   To add a file to the staging area (so it can be committed), use the `git add` command.
+   
+   git add filename
+   
+   To add all modified files to the staging area, you can use:
+   
+   git add .
+   
+
+---
+
+ 5. How do you commit changes to the repository?
+   Answer:  
+   To commit the staged changes to the repository, use the `git commit` command with a commit message.
+   
+   git commit -m "Your commit message"
+   
+
+---
+
+ 6. How do you view the commit history?
+   Answer:  
+   To view the commit history, use the `git log` command. It shows the history of commits with details like commit ID, author, date, and message.
+   
+   git log
+   
+
+---
+
+ 7. How do you view a specific commit's details?
+   Answer:  
+   You can use `git show` followed by the commit hash to view the details of a specific commit.
+   
+   git show <commit-hash>
+   
+
+---
+
+ 8. How do you create a new branch in Git?
+   Answer:  
+   To create a new branch, use the `git branch` command.
+   
+   git branch new-branch-name
+   
+
+---
+
+ 9. How do you switch to a different branch?
+   Answer:  
+   To switch to an existing branch, use the `git checkout` command.
+   
+   git checkout branch-name
+   
+   As of Git 2.23, you can also use the `git switch` command:
+   
+   git switch branch-name
+   
+
+---
+
+ 10. How do you merge one branch into another?
+   Answer:  
+   To merge one branch into the current branch, first switch to the target branch, then use the `git merge` command.
+   
+   git checkout target-branch
+   git merge source-branch
+   
+
+---
+
+ 11. What is the difference between `git merge` and `git rebase`?
+   Answer:  
+   - `git merge` combines the changes from two branches, creating a new commit for the merge.
+   - `git rebase` moves or "replays" your commits onto the top of another branch, resulting in a linear history without merge commits.
+
+   Example:
+   
+   git rebase master
+   
+
+---
+
+ 12. How do you delete a branch in Git?
+   Answer:  
+   To delete a local branch, use the `-d` option with `git branch`:
+   
+   git branch -d branch-name
+   
+
+   To force delete a branch (even if it has unmerged changes), use the `-D` option:
+   
+   git branch -D branch-name
+   
+
+   To delete a remote branch, use:
+   
+   git push origin --delete branch-name
+   
+
+---
+
+ 13. How do you clone a remote repository to your local machine?
+   Answer:  
+   To clone a remote repository, use the `git clone` command followed by the repository URL.
+   
+   git clone https://github.com/username/repository-name.git
+   
+
+---
+
+ 14. How do you fetch changes from a remote repository?
+   Answer:  
+   To fetch changes from a remote repository without merging them into your local branch, use the `git fetch` command:
+   
+   git fetch origin
+   
+
+---
+
+ 15. How do you pull changes from a remote repository and merge them into your current branch?
+   Answer:  
+   To pull changes from a remote repository and merge them into the current branch, use the `git pull` command:
+   
+   git pull origin branch-name
+   
+
+---
+
+ 16. How do you push your local changes to a remote repository?
+   Answer:  
+   To push your local commits to a remote repository, use the `git push` command:
+   
+   git push origin branch-name
+   
+
+---
+
+ 17. How do you set up a Git remote repository?
+   Answer:  
+   To add a remote repository, use the `git remote add` command:
+   
+   git remote add origin https://github.com/username/repository-name.git
+   
+
+   To view the list of remotes, use:
+   
+   git remote -v
+   
+
+---
+
+ 18. What is the purpose of the `.gitignore` file?
+   Answer:  
+   The `.gitignore` file specifies which files and directories should not be tracked by Git. This is useful for excluding temporary files, compiled code, and other irrelevant files from version control.
+
+   Example of a `.gitignore` file:
+   
+   *.log
+   *.tmp
+   node_modules/
+   
+
+---
+
+ 19. How do you revert a commit in Git?
+   Answer:  
+   To undo the last commit and keep the changes in your working directory, use:
+   
+   git reset --soft HEAD~1
+   
+
+   To undo the last commit and discard the changes, use:
+   
+   git reset --hard HEAD~1
+   
+
+   To revert a specific commit (without affecting subsequent commits), use `git revert`:
+   
+   git revert <commit-hash>
+   
+
+---
+
+ 20. How do you stash changes in Git?
+   Answer:  
+   If you need to temporarily save your changes without committing them, use the `git stash` command:
+   
+   git stash
+   
+
+   To apply the stashed changes later, use:
+   
+   git stash apply
+   
+
+   To view a list of stashes, use:
+   
+   git stash list
+   
+
+---
+
+ 21. What is a Git tag, and how do you create one?
+   Answer:  
+   A Git tag is a reference to a specific point in Git history, typically used for marking releases. To create a tag:
+   
+   git tag v1.0.0
+   
+
+   To push tags to the remote repository:
+   
+   git push origin v1.0.0
+   
+
+   To list all tags:
+   
+   git tag
+   
+
+---
+
+ 22. How do you merge changes from one branch into another with a fast-forward merge?
+   Answer:  
+   If the current branch has no new commits and the target branch is ahead, Git will perform a fast-forward merge by default when you use:
+   
+   git merge branch-name
+   
+
+   A fast-forward merge doesn’t create a merge commit but simply moves the current branch pointer to the target branch.
+
+---
+
+ 23. How do you resolve merge conflicts in Git?
+   Answer:  
+   When a merge conflict occurs, Git will mark the conflicted areas in the file. You need to manually edit the file to resolve the conflict. After resolving the conflict:
+   
+   git add filename
+   git commit
+   
+
+---
+
+ 24. How do you see the difference between the staged changes and the last commit?
+   Answer:  
+   Use the `git diff` command to see the differences between the staged changes and the last commit:
+   
+   git diff --staged
+   
+
+---
+
+ 25. How do you create a commit with a message from the command line?
+   Answer:  
+   You can create a commit with a message by using the `git commit -m` option:
+   
+   git commit -m "Commit message"
+   
+
+---
+
+These are basic Git commands that cover essential operations and workflow when using Git. By mastering these, you'll be able to manage your source code repositories effectively, collaborate with others, and work with Git’s most common features.
