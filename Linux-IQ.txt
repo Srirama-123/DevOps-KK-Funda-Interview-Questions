@@ -154,6 +154,25 @@ Answer:
 3. Verify backup:
    - Ensure the backup completes successfully by checking logs or monitoring the backup destination. You can also verify the integrity of the backup by extracting and checking its contents periodically.
 
----
+===============================================================
 
-These are just a few of the potential questions you might face during a DevOps interview. They cover various areas including system administration, troubleshooting, automation, and deployment, which are all essential skills for a DevOps engineer.
+IQ 8] You need to schedule a recurring task on a Linux server to run a cleanup script every day at midnight. How do you do this?
+Answer:
+
+Create the cleanup script:
+
+Write a cleanup script (e.g., cleanup.sh) and place it in an appropriate directory (e.g., /usr/local/bin/cleanup.sh).
+Set up a cron job:
+
+Use the crontab -e command to edit the crontab file. Add the following entry to schedule the task at midnight every day:
+
+0 0 * * * /usr/local/bin/cleanup.sh
+Verify the cron job:
+
+Check if the cron job is added by running crontab -l. You can also check the cron logs (/var/log/cron or /var/log/syslog) to ensure the job is executed as expected.
+Test the script:
+
+Before scheduling, manually run the script to ensure it works as expected.
+Ensure proper permissions:
+
+Verify that the script has execute permissions (chmod +x /usr/local/bin/cleanup.sh) and that the correct user has the necessary permissions to run the cron job.
