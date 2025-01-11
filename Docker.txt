@@ -1,1 +1,21 @@
+Docker Interview Questions
+==========================
+
+IQ 1] what is the diff between COPY and ADD?
+
+Answer:
+
+COPY is a simple command that copies files and directories from the local filesystem (host) to the container. It is predictable and explicit, making it the preferred choice when you only need to copy files without any additional functionality.
+
+ADD has all the functionality of COPY, but it also offers two additional features:
+
+It can automatically extract compressed files (such as .tar, .tar.gz, or .zip) into the container, which COPY cannot do.
+It can fetch files from remote URLs (HTTP/HTTPS), downloading them during the build process, which COPY cannot do either.
+
+Use Case Recommendations:
+-----------------------------
+Use COPY when you just need to copy files or directories into the image.
+Use ADD only when you need to extract compressed files or download files from remote locations (like an external server or URL).
+
+
 
