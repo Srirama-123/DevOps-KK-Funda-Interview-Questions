@@ -2,7 +2,7 @@ Linux Interview questions
 =========================
 
 
- IQ] A deployment fails because the server runs out of disk space. How do you identify and resolve the issue?
+ IQ 1] A deployment fails because the server runs out of disk space. How do you identify and resolve the issue?
 
 Answer:
 
@@ -20,7 +20,7 @@ Answer:
 
 ==================================================
 
- IQ] After a server reboot, a critical service fails to start. How would you troubleshoot this?
+ IQ 2] After a server reboot, a critical service fails to start. How would you troubleshoot this?
 
 Answer:
 1. Check the service status:
@@ -43,7 +43,7 @@ Answer:
 
 =================================================================
 
-IQ] A script you wrote is failing to run on a production server, but works on your local machine. How would you investigate and fix the issue?
+IQ 3] A script you wrote is failing to run on a production server, but works on your local machine. How would you investigate and fix the issue?
 
 Answer:
 1. Check for permission issues:
@@ -66,7 +66,7 @@ Answer:
 
 ===============================================================
 
- IQ] A deployment is running slowly, and you notice that CPU usage on the server is consistently high. What steps would you take to diagnose and resolve the problem?
+ IQ 4] A deployment is running slowly, and you notice that CPU usage on the server is consistently high. What steps would you take to diagnose and resolve the problem?
 
 Answer:
 1. Check system resource usage:
@@ -89,7 +89,7 @@ Answer:
 
 =============================================
 
- IQ] You are deploying a critical update, and you need to ensure that the rollback process is smooth in case of failure. What steps would you take to ensure this?
+ IQ 5] You are deploying a critical update, and you need to ensure that the rollback process is smooth in case of failure. What steps would you take to ensure this?
 
 Answer:
 1. Create backups:
@@ -112,7 +112,7 @@ Answer:
 
 =================================================================
 
-IQ] A server is running slow after a new application was deployed. How would you analyze and optimize the performance?
+IQ 6] A server is running slow after a new application was deployed. How would you analyze and optimize the performance?
 
 Answer:
 1. Check system resource usage:
@@ -135,7 +135,7 @@ Answer:
 
 ===========================================================
 
-IQ] You are required to implement a scheduled backup of important system files on a Linux server. How would you set it up?
+IQ 7] You are required to implement a scheduled backup of important system files on a Linux server. How would you set it up?
 
 Answer:
 1. Create a backup script:
