@@ -18,6 +18,8 @@ Answer:
     2. Clear package cache using `sudo apt-get clean` (for Ubuntu/Debian) or `sudo yum clean all` (for CentOS/RedHat).
     3. Identify and remove unused files or old backups.
 
+==================================================
+
  IQ] After a server reboot, a critical service fails to start. How would you troubleshoot this?
 
 Answer:
@@ -37,7 +39,9 @@ Answer:
    - Try restarting the service using `systemctl restart <service_name>` and monitor the logs again.
 
 6. Check for system resource issues:
-   - Ensure there are sufficient resources (memory, CPU, disk space) using `top`, `free -h`, and `df -h`.
+   - Ensure there are sufficient resources (memory, CPU, disk space) using `top`, `free -h`, and `df -h`
+
+=================================================================
 
 IQ] A script you wrote is failing to run on a production server, but works on your local machine. How would you investigate and fix the issue?
 
@@ -60,6 +64,8 @@ Answer:
 6. Test the script step-by-step:
    - Break the script down into smaller parts and test each part to see where it fails, logging outputs to help pinpoint the issue.
 
+===============================================================
+
  IQ] A deployment is running slowly, and you notice that CPU usage on the server is consistently high. What steps would you take to diagnose and resolve the problem?
 
 Answer:
@@ -80,6 +86,8 @@ Answer:
 
 6. Scaling or resource upgrade:
    - If necessary, you may need to scale the server (add more CPUs, RAM) or load balance traffic to reduce load on a single machine.
+
+=============================================
 
  IQ] You are deploying a critical update, and you need to ensure that the rollback process is smooth in case of failure. What steps would you take to ensure this?
 
@@ -102,6 +110,8 @@ Answer:
 6. Monitor the update:
    - Continuously monitor the system after deployment (using tools like `top`, `uptime`, or custom monitoring solutions). If something goes wrong, you can react quickly and trigger the rollback process.
 
+=================================================================
+
 IQ] A server is running slow after a new application was deployed. How would you analyze and optimize the performance?
 
 Answer:
@@ -122,6 +132,8 @@ Answer:
 
 6. Scale resources if needed:
    - If the server is under-provisioned, consider scaling the application horizontally (adding more servers) or vertically (upgrading the hardware).
+
+===========================================================
 
 IQ] You are required to implement a scheduled backup of important system files on a Linux server. How would you set it up?
 
