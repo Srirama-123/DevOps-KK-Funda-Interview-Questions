@@ -1,0 +1,218 @@
+Linux file-related scenario-based interview questions with answers KK FUNDA 
+===========================================================================
+
+---
+
+ 1. Scenario: You need to check the file type of a given file. Which command would you use and why?
+   Answer:  
+   You can use the `file` command to check the type of a file.
+   
+   file filename
+   
+   This command examines the file content and returns the file type (e.g., text, executable, directory, etc.).
+
+ 2. Scenario: You want to search for a specific word inside a file. Which command would you use?
+   Answer:  
+   You can use the `grep` command to search for a word inside a file.
+   
+   grep "word" filename
+   
+   This will search for "word" inside the file and print the matching lines.
+
+ 3. Scenario: You need to list all the files in a directory, including hidden files. Which command would you use?
+   Answer:  
+   You can use the `ls` command with the `-a` option to list all files, including hidden files (those starting with a dot).
+   
+   ls -a
+   
+
+ 4. Scenario: You need to find all files with a `.log` extension in a directory and its subdirectories. Which command would you use?
+   Answer:  
+   You can use the `find` command to recursively search for `.log` files.
+   
+   find /path/to/directory -type f -name "*.log"
+   
+
+ 5. Scenario: You want to copy a file from one directory to another. Which command would you use?
+   Answer:  
+   The `cp` command is used to copy files.
+   
+   cp source_file destination_directory/
+   
+
+ 6. Scenario: You need to move a file to another directory, and if the file already exists in the destination, it should be overwritten. Which command would you use?
+   Answer:  
+   You can use the `mv` command to move the file. The `mv` command will overwrite the destination file if it already exists.
+   
+   mv source_file destination_directory/
+   
+
+ 7. Scenario: You want to rename a file. Which command would you use?
+   Answer:  
+   You can use the `mv` command to rename a file.
+   
+   mv old_filename new_filename
+   
+
+ 8. Scenario: You want to delete a file, and you want to ensure that it is deleted even if it's write-protected. Which command would you use?
+   Answer:  
+   You can use the `rm` command with the `-f` (force) option to remove a write-protected file.
+   
+   rm -f filename
+   
+
+ 9. Scenario: You accidentally deleted a file using the `rm` command. How can you prevent this from happening in the future?
+   Answer:  
+   You can use the `rm` command with the `-i` (interactive) option to prompt before deleting each file.
+   
+   rm -i filename
+   
+
+ 10. Scenario: You want to display the contents of a file but only the first 10 lines. Which command would you use?
+   Answer:  
+   You can use the `head` command to display the first 10 lines of a file.
+   
+   head filename
+   
+
+ 11. Scenario: You want to display the contents of a file, but only the last 10 lines. Which command would you use?
+   Answer:  
+   You can use the `tail` command to display the last 10 lines of a file.
+   
+   tail filename
+   
+
+ 12. Scenario: You want to display the contents of a large file in a scrollable manner. Which command would you use?
+   Answer:  
+   You can use the `less` command to view a large file interactively, allowing you to scroll through it.
+   
+   less filename
+   
+
+ 13. Scenario: You want to compare two files and see the differences between them. Which command would you use?
+   Answer:  
+   You can use the `diff` command to compare the contents of two files.
+   
+   diff file1 file2
+   
+
+ 14. Scenario: You want to create a backup of a file by appending a timestamp to its name. How would you do this?
+   Answer:  
+   You can use the `cp` command with command substitution to create a backup with a timestamp.
+   
+   cp filename "filename_$(date +%F_%T)"
+   
+
+ 15. Scenario: You need to change the permissions of a file so that only the owner can read, write, and execute the file. Which command would you use?
+   Answer:  
+   You can use the `chmod` command to modify the file permissions.
+   
+   chmod 700 filename
+   
+
+ 16. Scenario: You want to change the ownership of a file to a specific user and group. Which command would you use?
+   Answer:  
+   You can use the `chown` command to change the ownership of a file.
+   
+   chown user:group filename
+   
+
+ 17. Scenario: You need to create a new directory to organize files. Which command would you use?
+   Answer:  
+   You can use the `mkdir` command to create a new directory.
+   
+   mkdir new_directory
+   
+
+ 18. Scenario: You want to archive a directory into a `.tar` file. Which command would you use?
+   Answer:  
+   You can use the `tar` command to archive a directory.
+   
+   tar -cvf archive_name.tar directory_name
+   
+
+ 19. Scenario: You want to extract a `.tar` file into a directory. Which command would you use?
+   Answer:  
+   You can use the `tar` command to extract a `.tar` file.
+   
+   tar -xvf archive_name.tar
+   
+
+ 20. Scenario: You want to list all the files in a directory with detailed information (e.g., permissions, ownership, file size). Which command would you use?
+   Answer:  
+   You can use the `ls` command with the `-l` option to list files with detailed information.
+   
+   ls -l
+   
+
+ 21. Scenario: You need to search for a string in multiple files within a directory and its subdirectories. Which command would you use?
+   Answer:  
+   You can use the `grep` command with the `-r` option to recursively search for a string in files.
+   
+   grep -r "search_string" /path/to/directory
+   
+
+ 22. Scenario: You want to create a symbolic link (symlink) to a file. Which command would you use?
+   Answer:  
+   You can use the `ln` command with the `-s` option to create a symbolic link.
+   
+   ln -s original_file symlink_name
+   
+
+ 23. Scenario: You need to find the size of a file or directory. Which command would you use?
+   Answer:  
+   You can use the `du` command to display the size of a file or directory.
+   
+   du -sh filename_or_directory
+   
+
+ 24. Scenario: You want to find a file by name but don’t know the exact path. Which command would you use?
+   Answer:  
+   You can use the `find` command to search for a file by name.
+   
+   find / -name "filename"
+   
+
+ 25. Scenario: You want to append the contents of one file to another file. Which command would you use?
+   Answer:  
+   You can use the `cat` command with the `>>` operator to append the contents of one file to another.
+   
+   cat source_file >> destination_file
+   
+
+ 26. Scenario: You want to remove all files in a directory that are older than 7 days. Which command would you use?
+   Answer:  
+   You can use the `find` command with the `-mtime` option to remove files older than 7 days.
+   
+   find /path/to/directory -type f -mtime +7 -exec rm {} \;
+   
+
+ 27. Scenario: You need to change the modification time of a file to the current time. Which command would you use?
+   Answer:  
+   You can use the `touch` command to update the timestamp of a file.
+   
+   touch filename
+   
+
+ 28. Scenario: You want to secure a file so that only the owner can access it. Which command would you use?
+   Answer:  
+   You can use the `chmod` command to set the file permissions to read, write, and execute for the owner only.
+   
+   chmod 700 filename
+   
+
+ 29. Scenario: You need to remove all empty files from a directory. Which command would you use?
+   Answer:  
+   You can use the `find` command to search for empty files and delete them.
+   
+   find /path/to/directory -type f -empty -delete
+   
+
+ 30. Scenario: You want to display the content of a file with line numbers. Which command would you use?
+   Answer:  
+   You can use the `nl` command to display the file content with line numbers.
+   
+   nl filename
+   
+
+---
