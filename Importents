@@ -12,3 +12,7 @@ adduser:
 It’s a high-level command (often a script) that is easier to use.
 It automatically handles creating the home directory, setting the default shell, and asks you for details like the password, full name, etc.
 It’s more user-friendly, especially for beginners.
+
+
+Question;
+Which version of jenkins you used  in your project    expample :   2.4   
