@@ -1,0 +1,14 @@
+Difference between adduser and useradd:
+
+useradd:
+
+It’s a low-level command used to create a user account.
+It requires you to manually specify options like the home directory, shell, etc.
+It doesn’t provide prompts or interactive questions.
+It's more flexible but requires more input from the user. 
+
+adduser:
+
+It’s a high-level command (often a script) that is easier to use.
+It automatically handles creating the home directory, setting the default shell, and asks you for details like the password, full name, etc.
+It’s more user-friendly, especially for beginners.
