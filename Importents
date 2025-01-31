@@ -16,3 +16,60 @@ It’s more user-friendly, especially for beginners.
 
 Question;
 Which version of jenkins you used  in your project    expample :   2.4   
+
+
+
+1. Give me your Self Intro
+2. How you will check disk utilization in Linux?
+3. How will you troubleshoot regarding running processes?
+4. What is the /etc directory?
+5. I am able to ping from machine to another machine but not able connect, how can you troubleshoot it?
+6. What is the exact flow for finding a large file using a shell scripting with error handling?
+7. Explain the exact command to get letter 'd' in your name?
+8. What is difference between softlink and hardlink?
+9. How will you do network issues troubleshooting, what are the commands you use?
+10. How to find log files in a directory which are not used from the given rentention time period?
+11. How will you create backup for all logs and explain the process?
+12. what is the exact command to archeive logs?
+13. If your cpu utlization very high then how will you troubleshoot it?
+14. If it is exceeding 80% of CPU utilization, how can you send alerts in Linux?
+15. How will you get first 1000 line from a file?
+16. If your system is unresponsive then what are the troubleshooting steps you do for to solve this issue?
+17. Give me exact command to create a symlink to refer?
+18. what are the commands you use for mounting and unmounting purposes?
+19. How will you make enable of passwordless authentication between two systems?
+20  What the INODE in linux?
+21. If a system is not responding after a restart, what could be reason and how will you troubleshoot it?
+22. What are the shell scripts used during your projects?
+23. Explain the complete flow of a shell script which is you mostly used in your proejct in a end-to-end manner?
+24. How will you handle the memory management in python?
+25. Can you explain the role of CICD and how would do it with using python?
+26. Explain how would do error handling in python?
+27. Can you tell me what is the deep and shadow copy in python?
+28. What is docker compose and how it is differ from a Dockerfile?
+29. How can manage the sensitive data like passwords in docker?
+30. How docker handles the resource utilizations such as cpu and memory?
+31. What is the command to export docker image?
+32. Where are docker volumes store in docker?
+33. What is the purposes of docker checkpoint?
+34. How will encure container-1 runs before container-2 run in docker compose?
+35. How you update the docker container without losing the data?
+36. In K8s a critical application is failing and logs not providing any kind of information.
+    What steps you take to troubleshoot this kind of issues?
+37. A critical application is running on one of the nodes, It is not working properly.
+    How would you monitor suck kind of applications in k8s?
+38. What is the role of Kube Proxy in cluster?
+39. If you have a pod that is struck in a CrashLoppBackOff error, how do you troubleshoot it?
+40. If your application which is running on k8s cluster which is facing huge traffic and slowdown.
+    then how would to scale up the resources for that pod?
+41. Suppose you deployed a new version of an application but users are experiencing some issues wit that new version.
+    How do you rollback to the previous version?
+42. Suppose your application is deployed in k8s, after scale up that pods and applications are still not performing well,
+    the cpu usage is high and memory usage reaching the limits, how do you handle this kind of issues?
+43. In your k8s cluster master and worker nodes are suddenly failed, then what will happen?
+44. If only master node fail means what will happen?
+45. If worker nodes fails what will happen?
+46. Suppose your application is using pvc but the pvc is struck in the pending state.
+    So how would you troubleshoot it?
+47. You have configured a networkpolicy to restrict the traffic between the pods, but some pods are still able to 
+    communicate, so how would you troubleshoot it?
