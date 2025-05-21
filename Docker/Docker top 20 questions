@@ -5,7 +5,7 @@ In one of our dev environments, a Node.js container was stuck in a crash loop. U
 Powered by KK Technologies Pvt. Ltd.
 
 
-2.	2. 2. Docker container not able to access the internet – what will you check?
+2.	2. 2. **Docker container not able to access the internet – what will you check?
 We faced this in staging where a container couldn’t reach external APIs. I entered the container using `docker exec` and tried `ping 8.8.8.8` and `curl google.com`. It failed, confirming DNS issues. The container was on the default bridge network. I fixed it by adding a custom bridge network and configured Docker daemon to use Google's DNS via `/etc/docker/daemon.json`. Restarted the Docker service, and everything worked fine. Later, we used `network_mode: host` in critical network-bound services to avoid such issues.
 Powered by KK Technologies Pvt. Ltd.
 
